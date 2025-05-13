@@ -1,0 +1,77 @@
+{
+  "id": "28128a5f-d85a-44a3-a4c7-497ef5263552",
+  "version": "2.0",
+  "name": "AmazonTest",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "ba47cccf-ecf1-423d-af51-00e31a3b8c1a",
+    "name": "AddProductToCart",
+    "commands": [{
+      "id": "bf59f6d1-4cd4-41fd-a046-2efdede23815",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91599dfa-c7a0-49d6-89d5-4675433c68c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [],
+      "value": "laptop"
+    }, {
+      "id": "c086f86f-982a-4644-9674-729b369efb35",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cc66391e-7456-4159-956b-2525bd5b8270",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.s-main-slot .s-result-item",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "00b97f4f-46b7-4286-a92c-6bbdbb3bc4bc",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "c057a57c-8811-4add-ac56-8d4d10402bbc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.location.href = document.evaluate(\"//h2[span[contains(text(), 'Acer Aspire 3 A315-24P-R7VH')]]/ancestor::a\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.href",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79baaf95-d593-4083-a303-5cfc9348b8b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b187d64b-1ff8-4da4-b432-cc98d1162364",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }]
+  }],
+  "suites": [{
+    "id": "80dc4c7f-e9ea-4309-ac9d-19d0301bf427",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ba47cccf-ecf1-423d-af51-00e31a3b8c1a"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": []
+}

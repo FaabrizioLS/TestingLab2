@@ -1,0 +1,73 @@
+{
+  "id": "bdde6573-56c7-4bd6-889f-e94c6515e09c",
+  "version": "2.0",
+  "name": "Ejercicio-1",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "df586235-13a0-4197-9b0e-34e401c1c9db",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "fd6e5320-59fb-4c3c-b747-4b930a4a43a7",
+    "name": "buscarGoogle",
+    "commands": [{
+      "id": "b60dd93c-9da9-4bc9-86cd-877c49c9047e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e25f4eb-90d7-45d4-9347-f659b04107a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x896",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75219905-cb2c-452a-9a21-75471fe1ecfb",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "selenium ide "
+    }, {
+      "id": "f0d71b54-3167-42ef-93a6-81c2cdb53d6b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=APjFqb",
+      "targets": [],
+      "value": "${KEY_ENTER}\\n"
+    }, {
+      "id": "09b2934c-e946-4d38-a7d7-117a6a0db2eb",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "6a162346-35eb-42d6-aa74-4daef56b341c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.LC20lb",
+      "targets": [],
+      "value": "Open source record and playback test automation for the web"
+    }]
+  }],
+  "suites": [{
+    "id": "92338520-0090-4735-8518-cce68d6e11e7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["df586235-13a0-4197-9b0e-34e401c1c9db"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
